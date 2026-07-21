@@ -115,7 +115,6 @@
   .trainer-body p{color:var(--text-2);margin-top:14px;font-size:14.5px;}
   .trainer-cta{margin-top:20px;display:flex;gap:12px;}
 
-  .trainer-card [data-reveal]{opacity:none;transform:none;transition:none;}
 
   /* TESTIMONIALS */
   .test-grid{display:grid;gap:24px;grid-template-columns:1fr;}
@@ -138,5 +137,5 @@
   .foot-row{display:flex;flex-direction:column;gap:14px;font-size:13px;color:#9CA3AF;}
   @media(min-width:760px){.foot-row{flex-direction:row;justify-content:space-between;align-items:center;}}
 
-  [data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .5s ease, transform .5s ease;}
+  [data-reveal]{opacity:none;transform:translateY(16px);transition:opacity .5s ease, transform .5s ease;}
   [data-reveal].in{opacity:1;transform:translateY(0);}
