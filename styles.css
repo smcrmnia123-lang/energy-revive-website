@@ -115,7 +115,7 @@
   .trainer-body p{color:var(--text-2);margin-top:14px;font-size:14.5px;}
   .trainer-cta{margin-top:20px;display:flex;gap:12px;}
 
-  .trainer-card .data-reveal{opacity:none;transform:none;transition:none;}
+  .trainer-card [data-reveal]{opacity:none;transform:none;transition:none;}
 
   /* TESTIMONIALS */
   .test-grid{display:grid;gap:24px;grid-template-columns:1fr;}
