@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Energy Revive Boxing & Fitness Gym</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="wrap">
+      <div class="brand"><img src="data:image/png;base64,iVBORw0KGgo..." alt="Energy Revive logo" style="height:44px;width:44px;border-radius:50%;"><span class="brand-text">ENERGY <em>REVIVE</em></span></div>
+      <div class="navlinks">
+        <a href="index.html#about">About</a>
+        <a href="index.html#programs">Programs</a>
+        <a href="index.html#coach">Coach</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="index.html#booking" class="btn btn-accent">Book now</a>
+    </div>
+  </nav>
+
+  <section class="section" style="padding-top:140px;">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="tag">Get In Touch</div>
+        <h2>Questions? Let's Talk</h2>
+        <p>Membership inquiries, program questions, or anything else — send us a message and we'll get back to you.</p>
+      </div>
+
+      <form class="form-card" id="contact-form">
+        <div class="form-row">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </div>
+        <div class="form-row">
+          <label for="type">Inquiry Type</label>
+          <select id="type">
+            <option>Membership Inquiry</option>
+            <option>Training Program</option>
+            <option>General Question</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="program">Program of Interest</label>
+          <select id="program">
+            <option>Boxing Fundamentals</option>
+            <option>Strength Training</option>
+            <option>Cardio & Conditioning</option>
+            <option>1-on-1 Coaching</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Tell us what you're looking for"></textarea>
+        </div>
+        <button type="submit" class="btn btn-accent" style="width:100%;">Submit</button>
+      </form>
+      <p id="form-status" style="text-align:center;margin-top:16px;font-size:14px;color:var(--dark);"></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot-row">
+      <div style="display:flex;align-items:center;gap:10px;"><img src="data:image/png;base64,iVBORw0KGgo..." alt="Energy Revive logo" style="width:32px;height:32px;border-radius:50%;">Energy Revive Boxing &amp; Fitness Gym — San Pablo City, Laguna</div>
+      <div>206 Colago Ave · Open daily until 8 PM</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
