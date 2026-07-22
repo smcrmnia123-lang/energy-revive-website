@@ -92,7 +92,6 @@
   .prog-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.06);}
   .prog-card .ph{aspect-ratio:4/3;}
   .prog-card img.ph{object-fit:cover;background:none;border:none;padding:0;aspect-ratio:4/3;}
-  .prog-card:hover img.ph{transform:scale(1.05);transition:transform .3s ease;}
   .prog-card .body{padding:22px;}
   .prog-card h3{font-size:17px;font-weight:600;}
   .prog-card p{color:var(--text-2);font-size:13.5px;margin-top:8px;}
