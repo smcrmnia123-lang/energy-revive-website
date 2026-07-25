@@ -4,14 +4,30 @@ const io = new IntersectionObserver((entries) => {
 }, {threshold:0.15});
 revealEls.forEach(el => io.observe(el));
 
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      document.getElementById('form-status').textContent =
-        'Thank you! We received your message and will contact you shortly.';
-      form.reset();
-    });
-  }
-});
+const form = document.getElementById('contact-form');
+if (form) {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+  const data = {
+    full_name: document.getElementById('name').value,
+    phone: document.getElementById('phone').value,
+    email: document.getElementById('email').value,
+    inquiry_type: document.getElementById('type').value,
+    program_interest: document.getElementById('program').value,
+    message: document.getElementById('message').value
+  };
+
+ fetch('http://localhost/shared-backend-php/energyrevive-contact.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  })
+  .then(function (response) { return response.json(); })
+  .then(function (result) {
+    document.getElementById('form-status').textContent = result.message;
+    form.reset();
+  })
+  .catch(function (error) {
+    document.getElementById('form-status').textContent = 'Something went wrong.';
+  });
+})}
