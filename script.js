@@ -17,7 +17,7 @@ if (form) {
     message: document.getElementById('message').value
   };
 
- fetch('http://localhost/shared-backend-php/energyrevive-contact.php', {
+ fetch('https://energy-revive.site.je/energyrevive-contact.php', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
